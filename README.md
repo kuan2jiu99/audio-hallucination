@@ -22,8 +22,17 @@ questions.
 
 
 ## Evaluation Datasets
-- Hugging Face Link: `https://huggingface.co/datasets/kuanhuggingface/AudioHallucination_AudioCaps-Random`
-- Hugging Face Dataset: `kuanhuggingface/AudioHallucination_AudioCaps-Random`
+- Hugging Face Link: 
+    - Discriminative Tasks
+        - Random Sampling: https://huggingface.co/datasets/kuanhuggingface/AudioHallucination_AudioCaps-Random
+        - Popular Sampling: https://huggingface.co/datasets/kuanhuggingface/AudioHallucination_AudioCaps-Popular
+        - Adversarial Sampling: https://huggingface.co/datasets/kuanhuggingface/AudioHallucination_AudioCaps-Adversarial
+
+- Hugging Face Dataset: 
+    - Discriminative Tasks
+        - Random Sampling: `kuanhuggingface/AudioHallucination_AudioCaps-Random`
+        - Popular Sampling: `kuanhuggingface/AudioHallucination_AudioCaps-Popular`
+        - Adversarial Sampling: `kuanhuggingface/AudioHallucination_AudioCaps-Adversarial`
 
 ## Usage
 Description of fields in the dataset:
@@ -40,3 +49,21 @@ Description of fields in the dataset:
     - The correct answer corresponding to the prompt_text.
 - `sampling`
     - How the negative sample object is selected; random means it is chosen randomly from the AudioCaps test split, excluding the ground truth for that audio.
+
+## Results
+![text](images/discriminative_results.jpg)
+![text](images/generative_results.jpg)
+
+## Baseline Models
+- Qwen-Audio-Chat
+    - Qwen-audio: Advancing universal audio understanding via unified large-scale audio-language models [[ArXiv](https://arxiv.org/abs/2311.07919)]
+
+- SALMONN
+    - SALMONN: Towards Generic Hearing Abilities for Large Language Models [[ArXiv](https://arxiv.org/abs/2310.13289)]
+
+- LTU-AS
+    - Joint Audio and Speech Understanding [[ArXiv](https://arxiv.org/abs/2309.14405)]
+
+- Cascade (Whisper + LLaMA-2 7b, Whisper + gpt-3.5-turbo)
+    - Robust Speech Recognition via Large-Scale Weak Supervision [[ArXiv](https://arxiv.org/abs/2212.04356)]
+    - Llama 2: Open Foundation and Fine-Tuned Chat Models [[ArXiv](https://arxiv.org/abs/2307.09288)]
