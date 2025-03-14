@@ -49,6 +49,15 @@ The official Github page of the paper "Can Large Audio-Language Models Truly Hea
     - Temporal Order: `kuanhuggingface/Audio-Hallucination_Temporal-Order_CompA-Order`
     - Object Attribute: `kuanhuggingface/Audio-Hallucination_Object-Attribute_CompA-Attribute`
 
+- Audio Files
+    - Object Existence: 
+        ``` bash
+        wget https://huggingface.co/datasets/kuanhuggingface/BEAF-Audio/resolve/main/BEAF_Audio.tar
+
+        tar -xvf BEAF_Audio.tar
+        ```
+    - Temoporal Order and Object Attribute: Refer to the original CompA datasets ([Link](https://sreyan88.github.io/compa_iclr/)).
+
 - Original Dataset:
     - For `Object Existence`, we combine audio data from `AudioCaps`, `ESC50`, and `VocalSound`. The dataset will be released soon.
     - For `Temporal Order`, we use audio data from [CompA-Order](https://sreyan88.github.io/compa_iclr/), as described in the paper "CompA: Addressing the Gap in Compositional Reasoning in Audio-Language Models" ([Link](https://openreview.net/forum?id=86NGO8qeWs))
