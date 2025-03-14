@@ -39,11 +39,25 @@ questions.
         
             https://huggingface.co/datasets/kuanhuggingface/AudioHallucination_AudioCaps-Adversarial
 
+    - Generative Tasks
+        - Refer to `generative_tasks/inference.py` for model inference.
+        - Refer to `generative_tasks/evaluation.py` for result evaluation.
+
 - Hugging Face Dataset: 
     - Discriminative Tasks
         - Random Sampling: `kuanhuggingface/AudioHallucination_AudioCaps-Random`
         - Popular Sampling: `kuanhuggingface/AudioHallucination_AudioCaps-Popular`
         - Adversarial Sampling: `kuanhuggingface/AudioHallucination_AudioCaps-Adversarial`
+    - Generative Tasks:
+        - `kuanhuggingface/audiocaps_hallucination`
+
+- CHIME6-Noise-ASR:
+    - We also validate the models' capabilities in ASR under conditions with environment noise interference.
+    - We select instances in the CHIME6 eval set with more than three nouns in the transcription, totaling 489 instances.
+    - Please refer to the below link.
+        ``` bash
+        wget https://huggingface.co/datasets/kuanhuggingface/CHIME6-Noise-ASR/blob/main/chime6-noise-asr.json
+        ```
 
 
 ## Description of fields in the dataset
